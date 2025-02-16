@@ -12,6 +12,7 @@ ports:
 ports_description:
   8110/tcp: AIS-catcher config
   8100/tcp: AIS-catcher webview
-devices:
-  - /dev/bus/usb:/dev/bus/usb
+privileged: true
+usb: true
+webui: http://[HOST]:[PORT:8100]/
 image: ghcr.io/jvde-github/ais-catcher-control
