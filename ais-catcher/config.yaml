@@ -13,10 +13,13 @@ ports_description:
   8110/tcp: AIS-catcher config
   8100/tcp: AIS-catcher webview
 privileged:
+  - NET_ADMIN
+  - SYS_ADMIN
   - SYS_MODULE
   - SYS_RAWIO
-  - SYS_ADMIN
   - SYS_RESOURCE
 usb: true
+apparmor: false
+host_dbus: true
 webui: http://[HOST]:[PORT:8100]/
 image: ghcr.io/jvde-github/ais-catcher-control
