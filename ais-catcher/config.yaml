@@ -12,4 +12,4 @@ ports:
 ports_description:
   8110/tcp: AIS-catcher config
   8100/tcp: AIS-catcher webview
-image: ghcr.io/jvde-github/ais-catcher:v0.61
+image: ghcr.io/jvde-github/ais-catcher
